@@ -1,0 +1,458 @@
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #fb7052;
+}
+a:visited {
+    color: #fb7052;
+}
+a:hover {
+    color: #d6634a;
+}
+
+body {
+
+    font-family: sans-serif;
+}
+
+
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  #fb7052;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 900;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    padding: 0.5rem;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    border-bottom-color: rgb(110, 109, 100);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.border-style{
+    background-color: rgb(243, 243, 243);
+    border-bottom-color: rgb(110, 109, 100);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 6vh;
+    display: none;
+}
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    display: none;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 902;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media(max-width: 600px){
+    .ham-menu{
+        display: block;
+    }
+    .home-about{
+        .display: none;
+    }
+    nav{
+        padding: 1rem;
+    }
+
+}
+.report-tooltip{
+    position: absolute;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 12%;
+    right: 35%;
+}
+.contact-tooltip{
+    position: absolute;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 12%;
+    right: 24%;
+}
+.service-tooltip{
+    position: absolute;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 12%;
+    right: 15%;
+}
+
+.report-div:hover .report-tooltip{
+    opacity: 1;
+}
+.about-div:hover .about-tooltip{
+    opacity: 1;
+}
+.contact-div:hover .contact-tooltip{
+    opacity: 1;
+}
+.service-div:hover .service-tooltip{
+    opacity: 1;
+}
+/*Tooltips end*/
+
+.home{
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    top: 20px;
+}
+.Report{
+    position: absolute;
+    left: 60%;
+    font-size: 30px;
+    top: 20px;
+}
+
+.contact{
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    top: 20px; 
+}
+.service{
+    position: absolute;
+    left: 80%;
+    font-size: 30px;
+    top: 20px; 
+}
+.home-about{
+    border-bottom-color: gray;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    height: 65px;
+}
+
+.about-h1{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 56px;
+    color: #fb7052;
+    font-family: Upworkrza,sans-serif;
+    font-weight: 400;
+}
+.arafat-pic{
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    border-radius: 50px;
+    left: 10%;
+}
+.ceo-name{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-family: Upworkrza,sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+    display: inline-block;
+}
+.role{position: absolute;
+    top: 53%;
+    left: 20%;
+    font-weight: 550;
+}
+a {
+    color: rgb(38, 0, 100);
+}
+a:visited {
+    color: rgb(38, 0, 100);
+}
+a:hover {
+    color: #000a3b;
+}
+.intro{
+    font-family: Neuemontreal,sans-serif;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 75%;
+    color: #5E5D55;
+    font-weight: 500;
+}
+.quote{
+    position: absolute;
+    top: 85%;
+    font-family: Neuemontreal,sans-serif;
+    left: 10%;
+    width: 75%;
+    color: #fb7052;
+    font-weight: 500;
+    font-size: 25px;
+}
+.body{
+    font-family: Neuemontreal,sans-serif;
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    width: 75%;
+    color: #5E5D55;
+    font-weight: 500;
+}
+.about-me{
+    font-family: Neuemontreal,sans-serif;
+    position: absolute;
+    top: 130%;
+    left: 10%;
+}
+.about-me-p{
+    font-family: Neuemontreal,sans-serif;
+    position: absolute;
+    top: 140%;
+    left: 10%;
+    width: 75%;
+    color: #5E5D55;
+    font-weight: 500;
+}
+.span{
+    display: block;
+}
+.signature{
+    position: absolute;
+    top: 160%;
+    height: 160px;
+}
+.signature-name{
+    position: absolute;
+    top: 175%;
+    left: 20%;
+    font-size: 20px;
+}
+@media(max-width: 1144px){
+    .Report{
+        left: 50%;
+    }
+    .contact{
+        left: 65%;
+    }
+    .service{
+        left: 80%;
+    }
+}
+@media(max-width: 1000px){
+    
+    .ceo-name{
+        top: 42%;
+        left: 25%;
+    }
+    .role{
+        top: 50%;
+        left: 25%;
+    }
+    .intro{
+        top: 65%;
+    }
+    .quote{
+        top: 100%;
+    }
+    .body{
+        top: 140%;
+    }
+    .about-me{
+        top: 180%;
+    }
+    .about-me-p{
+        top: 190%;
+    }
+    .signature{
+        top: 235%;
+    }
+    .signature-name{
+        top: 255%
+    }
+}
+@media(max-width: 800px){
+    .home-about{display: none;}
+    .ham-menu{display: block;}
+    nav{padding: 1rem;}
+}
+@media(max-width: 784px){
+    .ceo-name{
+        left: 30%;
+    }
+    .role{
+        left: 30%;
+    }
+    .signature{
+        top: 140%;
+        left: -10%;
+    }
+    .signature-name{
+        top: 151%;
+        left: 50%;
+    }
+}
+@media(max-width: 772px){
+    .Report{
+        left: 40%;
+    }
+    .contact{
+        left: 57%;
+    }
+    .service{
+        left: 75%;
+    }
+}
+@media(max-width: 650px){
+    .quote{top: 120%;}
+    .body{
+        top: 180%;
+    }
+    .about-me{top: 220%;}
+    .about-me-p{top: 230%;}
+    .signature{top: 290%;}
+    .signature-name{top: 310%;}
+}
+@media(max-width: 535px){
+    .ceo-name{
+        left: 30%;
+        width: 68%;
+        top: 45%;
+    }
+    .arafat-pic{left: 5%;}
+    .role{left: 35%;
+    top: 53%;}
+    .intro, .quote, .body{
+        width: 85%;
+    }
+}
+@media(max-width: 515px){ 
+   .arafat-pic{
+        height: 80px;
+        top: 35%;
+    }
+    .ceo-name{
+        font-size: 30px;
+        top: 38%;
+        left: 27%;
+    }
+    .role{
+        top: 45%;
+        left: 30%;
+    }
+
+}
+@media(max-width: 470px){
+    .signature{
+        width: 70%;
+        top: 300%;
+        height: auto;
+        left: 05%;
+    }
+    .signature-name{
+        top: 315%;
+        left: 40%;
+    }
+}
+@media(max-width: 460px){
+    .about-me{top: 225%;}
+}
+@media(max-width: 430px){
+    .about-me{
+        top: 240%;
+    }
+    .about-me-p{
+        top: 250%;
+    }
+    .signature{
+        top: 300%;
+    }
+    .signature-name{
+        top: 308%;
+    }
+    @media(max-width: 412px){
+        .signature{top: 360%;}
+        .signature-name{top: 370%;}
+        .body{top: 190%;}
+    }
+}
+@media(max-width: 398px){
+    .quote{top: 130%;}
+    .body{top: 210%;}
+    .about-me{top: 270%;}
+    .about-me-p{top: 280%;}
+    .signature{top: 360%;}
+    .signature-name{top: 370%;}
+}
+@media(max-width: 390px){
+    .ceo-name{
+        font-size: 25px;
+        left: 33%;
+    }
+    .role{left: 35%;
+    width: 200px;}
+}

@@ -1,0 +1,596 @@
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.about, .contact, .Report, .service {
+    color: rgb(38, 0, 100);
+}
+.about, .contact, .Report, .service:visited {
+    color: rgb(38, 0, 100);
+}
+.about:hover, .contact:hover, .Report:hover, .service:hover {
+    color: #000a3b;
+}
+
+body {
+
+    font-family: sans-serif;
+}
+
+
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  #fb7052;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 900;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    padding: 2rem;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    width: 100%;
+    z-index: 902;
+    border-bottom-color: gray;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    display: none;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+a{
+    color: rgb(17, 1, 1);
+    text-decoration: none;
+}.apply{
+    text-decoration-color: white;
+    background-color: #fb7052;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: roboto, arial, sans-serif;
+}
+.home{
+    position: absolute;
+    left: 40%;
+    font-size: 30px;
+    top: 20px;
+}
+.Report{
+    position: absolute;
+    left: 40%;
+    font-size: 30px;
+    top: 20px;
+}
+.about{
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    top: 20px; 
+}
+.contact{
+    position: absolute;
+    left: 60%;
+    font-size: 30px;
+    top: 20px; 
+}
+.service{
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    top: 20px; 
+}
+@media(max-width: 800px){
+    .home-about{display: none;}
+}
+/*Tooltips start*/
+.report-tooltip{
+    position: absolute;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 100%;
+    right: 55%;
+}
+.about-tooltip{
+    position: absolute;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 100%;
+    right: 42%;
+}
+.contact-tooltip{
+    position: absolute;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 90%;
+    right: 35%;
+}
+.service-tooltip{
+    position: absolute;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    padding: 5px 4px 5px 4px ;
+    opacity: 0;
+    top: 100%;
+    right: 25%;
+}
+
+.report-div:hover .report-tooltip{
+    opacity: 1;
+}
+.about-div:hover .about-tooltip{
+    opacity: 1;
+}
+.contact-div:hover .contact-tooltip{
+    opacity: 1;
+}
+.service-div:hover .service-tooltip{
+    opacity: 1;
+}
+/*Tooltips end*/
+.apply-a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.apply-a:hover{
+    color: #fb7052;
+}
+.apply:hover{
+    color: #fb7052;
+    background-color: rgb(250, 250, 250);
+}
+.apply:active{
+    color: #fb7052;
+}
+.country-p{
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.postalcode-p{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.city-p{
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.language-p{
+    position: absolute;
+    top: 34%;
+    left: 20%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.title-p{
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.email-p{
+    position: absolute;
+    top: 54%;
+    left: 60%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.description-p{
+    position: absolute;
+    top: 74%;
+    left: 20%;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+.city{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 20%;
+    width: 15%;
+    height: 5%;
+    left: 20%;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: rgb(243, 243, 243);
+    
+    
+}
+.language{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top:  42%;
+    width: 15%;
+    height: 5%;
+    left: 20%;
+    padding-left: 10px;
+    background-color: rgb(243, 243, 243);
+    font-size: 17px;
+    
+    
+}
+.title{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top:  62%;
+    width: 15%;
+    height: 5%;
+    left: 20%;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: rgb(243, 243, 243);
+    
+}
+.email{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 62%;
+    width: 30%;
+    height: 5%;
+    font-size: 17px;
+    left: 60%;
+    padding-left: 10px;
+    background-color: rgb(243, 243, 243);
+    
+}
+.description{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top:  82%;
+    width: 70%;
+    height: 30%;
+    left: 20%;
+    background-color: rgb(243, 243, 243);
+    padding-left: 10px;
+    font-size: 17px;
+    
+}
+input[type="text"]::placeholder{
+    position: absolute;
+    top: 20%;
+}
+input[type="text"]:-ms-input-placeholder{
+    position: absolute;
+    top: 3%;
+}
+
+.country{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 20%;
+    width: 15%;
+    height: 5%;
+    background-color: rgb(243, 243, 243);
+    left: 60%;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.postal-code{
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 42%;
+    width: 15%;
+    height: 5%;
+    font-size: 17px;
+    left: 60%;
+    padding-left: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.header{
+    background-color: #fb7052;
+    height: 60px;
+    position: relative;
+    z-index: 100;  
+    width: 1fr;
+    align-content: center;
+}
+.headerr{
+    position: fixed;
+    top: -18px;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    flex: 1;
+    z-index: 100;
+        }
+.button{
+    font-family: roboto, arial, sans-serif;
+    font-size: 16px;
+    background-color: #fb7052;
+    border: none; 
+    margin-top: 30px;
+    margin-right: 10px;
+ } 
+
+@media(max-width: 922px){
+    .title, .city, .country, .postal-code
+    ,.language{
+        width: 30%;
+    }
+}
+@media(max-width: 1044px)
+{
+    .user-pfp{right: 0;}
+}
+img{
+    height: 50px;
+}
+.name-of-user{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+@media(max-width: 1130px){
+    .name-of-user{
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+@media(max-width: 1016px)
+    {
+        .name-of-user{
+           position: absolute;
+           right: 10%;
+        }
+    }
+}
+@media(max-width: 1086px){
+    .Report{
+        left: 30%;
+    }
+    .about{
+        left: 41%;
+    }
+    .contact{
+        left: 52%;
+    }
+    .service{
+        left: 65%;
+    }
+}
+@media(max-width: 800px){
+    .ham-menu{
+        display: block;
+    }
+    nav{
+        padding: 1rem;
+    }
+}
+@media(max-width: 472px){
+    .button{
+        display: none;
+    }}
+@media(max-width: 646px){
+.title, .city, .country, .postal-code
+,.language{
+    width: 35%;
+}
+.city , .language{left: 10%;}
+ .city-p{
+    top: 13%;
+    left: 10%;
+}
+.language-p{
+    top: 35%;
+    left: 10%;
+}
+.postalcode-p{
+    top: 35%;
+    
+}
+.country-p{
+    top: 13%;
+    
+}
+.title-p{
+    top: 63%;
+    left: 10%;
+}
+.title{
+    left: 10%;
+    top: 70%;
+    width: 300px;
+}
+.description{
+    left: 10%;
+    width: 70%;
+}
+.description-p{
+    top: 75%;
+    left: 10%;
+}
+.email-p{
+    top: 50%;
+    left: 10%;
+}
+.email{
+    width: 300px;
+    left: 10%;
+    top: 57%;
+}
+.apply{
+    left: 30%;
+}
+}
+@media(max-width: 500px)
+{
+    .header{
+        background-color: #fb7052;
+        height: 60px;
+        position: relative;
+        z-index: 100;  
+        width: 100%;
+        align-content: center;
+    }
+    .headerr{
+        position: fixed;
+        top: -18px;
+        right: 0;
+        left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        flex: 1;
+        z-index: 100;
+            }
+    .city-p{
+        left: 3%;
+    }
+    .city{
+        left: 3%;
+        top: 17%;
+    }
+    .country{
+        top: 17%;
+    }
+    .country-p{
+        top: 13%;
+    }
+    .language{
+        left: 3%;
+        top: 34%;
+    }
+    .language-p{
+        left: 3%;
+        top: 30%;
+    }
+    .postal-code{
+        top: 34%;
+    }
+    .postalcode-p{
+        top: 30%;
+    }
+    .email-p{
+        top: 43%;
+    }
+    .email{
+        top: 47%;
+    }
+    .title{
+        left: 3%;
+        top: 60%;
+    }
+    .title-p{
+        left: 3%;
+        top: 56%;
+        
+    }
+    .description{
+        left: 3%;
+        top: 74%;
+    }
+    .description-p{
+        left: 3%;
+        top: 70%;
+    }
+    .country, .country-p, .postal-code, .postalcode-p{
+        left: 50%;
+    }
+    input[type="text"]::placeholder{
+        font-size: 15px;
+    }
+    .email, .email-p{
+        left: 3%;
+    }
+
+}
+@media(max-width: 400px){
+    input[type="text"]::placeholder{
+        font-size: 13px;
+    }
+}

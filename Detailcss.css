@@ -1,0 +1,762 @@
+
+.apply{
+    background-color: #fb7052;
+    position: absolute;
+    top: 145%;
+    left: 35%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: roboto, arial, sans-serif;
+}
+.apply:hover{
+    color: #fb7052;
+    background-color: rgb(243, 243, 243);
+}
+.apply:active{
+    color: rgb(3, 3, 241);
+}
+.logo{
+    height: 60px;
+}
+body{
+    margin: 0;
+}
+header{
+    margin-right: 0;
+    left: 0;
+    right: -5%;
+    top: 0;
+    position: absolute;
+}
+ .flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    height: 50px;
+}
+@media(max-width: 1190px){
+    .flex-header{
+        height: 50px;
+    }
+}
+img{
+    position: absolute;
+    left: 90%;
+    top: -0.5%;
+}
+.button{
+   font-family: roboto, arial, sans-serif;
+   font-size: 16px;
+   border: none; 
+   margin-top: 15px;
+   margin-left: 10px;
+   background-color: #fb7052;
+   justify-content: space-between;
+   cursor: pointer;
+   
+} 
+       @media(max-width: 1130px){
+    .button{
+        font-size: 13px;
+
+    }
+}      
+.rating-div{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 40px;
+}
+.avatar{
+    height: 100px;
+    position: absolute;
+    top: 14%;
+    left: 11%;
+}
+@media(max-width: 1228px){
+    .avatar{
+       height: 80px;
+    }
+}
+@media(max-width: 936px){
+    .avatar{
+        height: 60px;
+        top: 16%;
+    }
+}
+.detail-conatiner{
+    border-width: 3px;
+    border-style: soli;
+    border-radius: 25px;
+    height: 700px;
+    top: 20%;
+    left: 8%;
+    right: 8%;
+   border-color:rgb(196, 196, 196);
+    margin-bottom: 15%;
+    position: absolute;
+}
+@media(max-width: 1600px){
+    .detail-conatiner{
+        height: 800px;
+    }
+}
+@media(max-width: 1228px){
+    .detail-conatiner{
+        height: 850px;
+    }
+}
+@media(max-width: 940px)
+{
+    .detail-conatiner{
+        height: 850px;
+    }
+}
+.name{
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    font-size: 27px;
+}
+@media(max-width: 1228px){
+    .name{
+        font-size: 25px;
+        top: 33%;
+    }
+}
+.location{
+    position: absolute;
+    top: 54%;
+    left: 24%;
+}
+@media(max-width: 1228px){
+    .location{
+        top: 55%;
+        left: 26%;
+    }
+}
+@media(max-width: 940px){
+    .location{
+        top: 54.5%;
+        left: 25%;
+    }
+}
+.nation{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    font-size: 27px;
+}
+@media(max-width: 1228px){
+    .nation{
+        top: 50%;
+        left: 30%;
+    }
+}
+.verification{
+    width: 40px;
+    border: none;
+    position: absolute;
+    top: 43%;
+    left: 65%;
+    }
+    @media(max-width: 1228px){
+    .verification{
+        top: 38%;
+    }
+}
+@media(max-width: 1141px){
+    .verification{
+        left: 68%;
+    }
+}
+@media(max-width: 1053px){
+    .verification{
+        left: 75%;
+    }
+}
+@media(max-width: 896px){
+    .verification{
+        left: 80%;
+    }
+}
+
+@media(max-width: 802px){
+    .verification{
+        left: 85%;
+    }
+}
+.earned-amount{
+    width: 130px;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 54%;
+    font-size: 23px;
+    
+    
+}
+@media(max-width: 1228px){
+    .earned-amount{
+        font-size: 17px;
+        top: 48%;
+    }
+}
+.amount-p{
+    width: 150px;
+    border: none;
+    position: absolute;
+    top: 57%;
+    left: 54%;
+    color: #fb7052;
+    font-size: 17px;
+}
+@media(max-width: 1228px){
+    .amount-p{
+        font-size: 17px;
+        top: 55%;
+        left: 52%;
+    }
+}
+@media(max-width: 974px){
+    .amount-p{
+        font-size: 15px;
+    }
+}
+.job-amount{
+    width: 130px;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 66%;
+    font-size: 23px;
+}
+@media(max-width: 1228px){
+    .job-amount{
+        font-size: 17px;
+        top: 48%;
+    }
+}
+.total-hour-amount{
+    width: 130px;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 76%;
+    font-size: 23px;
+}
+@media(max-width: 1228px){
+    .total-hour-amount{
+        font-size: 17px;
+        top: 48%;
+    }
+}
+.hour-p{
+    width: 150px;
+    border: none;
+    position: absolute;
+    top: 57%;
+    left: 65%;
+    color: #fb7052;
+    font-size: 17px;
+}
+@media(max-width: 1228px){
+    .hour-p{
+        font-size: 17px;
+        top: 55%;
+        left: 64%;
+    }
+}
+@media(max-width: 974px){
+    .hour-p{
+        font-size: 15px;
+    }
+}
+.job-p{
+    width: 150px;
+    border: none;
+    position: absolute;
+    top: 57%;
+    left: 75%;
+    color: #fb7052;
+    font-size: 17px;
+}
+@media(max-width: 1228px){
+    .job-p{
+        font-size: 17px;
+        top: 55%;
+        left: 74%;
+    }
+}
+@media(max-width: 974px){
+    .job-p{
+        font-size: 15px;
+    }
+}
+.description{
+    width: 1fr;
+    border: none;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    right: 15%;
+    font-size: 16px;
+}
+.title{
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    right: 10%;
+    font-size: 50px;
+}
+.Languages{
+    width: 300px;
+    border: none;
+    position: absolute;
+    top: 130%;
+    left: 13%;
+    color: #fb7052;
+    font-size: 20px;
+}
+.rating{
+    width: 150px;
+    border: none;
+    position: absolute;
+    top: 129.5%;
+    left: 50%;
+    color: #fb7052;
+    font-size: 20px;
+}
+@media(max-width: 1034px){
+    .rating{
+        left: 57%;
+
+    }
+}
+.rating-p{
+    width: 100px;
+    border: none;
+    position: absolute;
+    top: 130%;
+    left: 44%;
+    color: #fb7052;
+    font-size: 20px;
+}
+@media(max-width: 1154px){
+    .rating-p{
+        top: 130%;
+        left: 43%;
+    }
+}
+@media(max-width: 1034px){
+    .rating-p{
+        left: 50%;
+    }
+}
+@media(max-width:817px){
+    .title{
+        top: 60%;
+        width: 1fr;
+        font-size: 40px;
+    }
+    .description{
+        top: 75%;
+    }
+    .rating{
+        left: 60%;
+    }
+}
+@media(max-width: 768px)
+{
+    .rating-p{
+        top: 150%;
+    }
+    .rating{
+        top: 149.5%;
+        left: 60%;
+    }
+    .Languages{
+        top: 150%;
+    }
+    .description{
+        font-size: 13px;
+        top: 50%;
+    }
+    .title{
+        top: 40%;
+        font-size: 30px;
+    }
+    .avatar{
+        top: 20px;
+    }
+    .name{
+        top: 20%;
+        font-size: 20px;
+    }
+    .location{
+        top: 35%;
+        left: 160px;
+    }
+    .nation{
+        top: 33%;
+        left: 200px;
+        font-size: 18px;
+    }
+    .verification{
+        top: 23%;
+        left: 560px;
+    }
+    .rating, .Languages{
+        top: 90%;
+        font-size: 18px;
+    }
+    .rating-p{
+        font-size: 18px;
+        top: 90%;
+    }
+    .detail-conatiner{
+        height: 500px;
+    }
+    .job-amount,.earned-amount,
+    .total-hour-amount{
+        top: 30%;
+    }
+    .amount-p,.job-p,.hour-p
+    {top: 38%;
+    font-size: 12px;}
+    .apply{
+        top: 100%;
+    }
+}
+@media(max-width: 700px
+){
+    header{
+    margin-right: 0;
+    left: 0;
+    right: -10%;
+    top: 0;
+    position: absolute;
+}
+    .description{
+        font-size: 12px;
+        top: 55%;
+    }
+    .title{
+        top: 46%;
+        font-size: 25px;
+    }
+    .avatar{
+        top: 20px;
+    }
+    .name{
+        top: 22%;
+        font-size: 15px;
+        left: 30%;
+    }
+    .location{
+        top: 36%;
+    }
+    .nation{
+        top: 35%;
+        left: 200px;
+        font-size: 16px;
+    }
+    .verification{
+        top: 23.5%;
+        left: 70%;
+        height: 15px;
+    }
+    .rating{
+        top: 93%;
+        font-size: 18px;
+        left: 70%;
+    }
+    .Languages{
+        top: 93%;
+        font-size: 18px;
+    }
+    .rating-p{
+        font-size: 18px;
+        top: 93.5%;
+        left: 60%;
+    }
+    .detail-conatiner{
+        height: 500px;
+        left: 10%;
+        right: 10%;
+    }
+    .job-amount,.earned-amount,
+    .total-hour-amount{
+        top: 30%;
+    }
+    .amount-p,.job-p,.hour-p
+    {top: 39%;
+    font-size: 12px;}
+    .unwanted{
+        display: none;
+    }
+}
+@media(max-width: 550px){
+    header{
+    }
+    .description{
+        font-size: 20px;
+        left: 23%;
+        width: 500px;
+    }
+    .title{
+        font-size: 35px;
+        width: 500px;
+    }
+    .Languages, .rating{
+        font-size: 20px;
+        top: 115%;
+    }
+    .rating{
+        left: 100%;
+    }
+    .rating-p{
+        font-size: 20px;
+        top: 115.5%;
+        left:85%;
+    }
+    .verification{
+        top: 25%;
+        left: 85%;
+        
+    }
+    .avatar{
+        left: 3%;
+        height: 81px;
+    }
+    .name{
+        left: 30%;
+        top: 23%;
+    }
+    .location{
+        left: 20%;
+        top: 32%;
+    }
+    .nation{
+        left: 29%;
+        top: 30.5%;
+        font-size: 19px;
+    }
+    .total-hour-amount, .job-amount
+    , .earned-amount{
+        font-size: 20px;
+        top: 28%;
+    }
+    .total-hour-amount{
+        left: 77.5%;
+    }
+    .earned-amount{
+        left: 55%;
+    }
+    .job-amount{
+        left: 100%;
+    }
+    .amount-p{ 
+        left: 55%;
+        top: 35%;
+        font-size: 18px;
+    }
+    .job-p{
+        left: 79%;
+        top: 35%;
+        font-size: 18px;
+    }
+    .hour-p{
+        top: 35%;
+        font-size: 18px;
+        left: 100%;
+    }
+    .detail-conatiner{
+        width: 100%;
+    }
+    .apply{
+        top: 127%;
+    }
+}
+
+@media(max-width: 478px){
+    header{
+        width: 140%;
+    }
+    .name{
+        font-size: 15px;
+        left: 27%;
+    }
+    .verification{
+        left: 100%;
+        top: 25%;
+    }
+    .location{
+        top: 30.5%;
+        left: 10%;
+    }
+    .nation{
+        left: 30%;
+    }
+    .avatar{
+        left: -5%;
+    }
+    .title{
+        top: 45%;
+        font-size: 45px;
+        left: 10%;
+    }
+    .description{
+        font-size: 20px;
+        width: 470px;
+        left: 10%;
+    }
+    .Languages, .rating{
+        font-size: 20px;
+        top: 115%;
+    }
+    .rating{
+        left: 107%;
+    }
+    .Languages{
+        left: 2%;
+    }
+    .rating-p{
+        font-size: 20px;
+        top: 115.5%;
+        left:85%;
+    }
+    .nation{
+        left: 80px;
+        top: 28.5%;
+        font-size: 23px;
+    }
+    .total-hour-amount, .job-amount
+    , .earned-amount{
+        font-size: 23px;
+        top: 28%;
+    }
+    .total-hour-amount{
+        left: 87.5%;
+    }
+    .earned-amount{
+        left: 58%;
+    }
+    .job-amount{
+        left: 110%;
+    }
+    .amount-p{ 
+        left: 50%;
+        top: 35%;
+        font-size: 19px;
+    }
+    .job-p{
+        left: 82%;
+        top: 35%;
+        font-size: 19px;
+    }
+    .hour-p{
+        top: 35%;
+        font-size: 19px;
+        left: 110%;
+    }
+}
+@media(max-width: 390px){
+    .name{
+        font-size: 15px;
+        left: 40%;
+        width: 100%;
+    }
+    header{
+        width: 150%;
+        position: 0;
+    }
+    .verification{
+        left: 130%;
+    }
+    .avatar{
+        left:5%;
+        top: 3%;
+    }
+    .title{
+        top: 45%;
+        font-size: 40px;
+        left: 20%;
+    }
+    .location{
+        left: 20%;
+        top: 35%;
+    }
+    .nation{
+        left: 29%;
+        top: 33%;
+        font-size: 19px;
+    }
+    .description{
+        font-size: 23px;
+        width: 400px;
+        left: 30%;
+    }
+    .Languages, .rating{
+        font-size: 23px;
+        top: 150%;
+    }
+    .rating{
+        left: 105%;
+    }
+    .rating-p{
+        font-size: 23px;
+        top: 150.5%;
+        left:84%;
+    }
+    .nation{
+        left: 31%;
+    }
+    .total-hour-amount, .job-amount
+    , .earned-amount{
+        font-size: 20px;
+        top: 28%;
+    }
+    .total-hour-amount{
+        left: 100.5%;
+    }
+    .earned-amount{
+        left: 70%;
+    }
+    .job-amount{
+        left: 130%;
+    }
+    .amount-p{ 
+        left: 65%;
+        top: 36%;
+        font-size: 19px;
+    }
+    .job-p{
+        left: 98%;
+        top: 36%;
+        font-size: 19px;
+    }
+    .hour-p{
+        top: 36%;
+        font-size: 19px;
+        left: 124%;
+        width: 100px;
+    }
+    .apply{
+        top: 160%;
+    }
+}
+
+body{font-family: Neue Montreal, Helvetica Neue, 
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+background-color: rgb(243, 243, 243);}

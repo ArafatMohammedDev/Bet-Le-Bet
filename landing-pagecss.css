@@ -1,0 +1,517 @@
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .text-container{
+            
+            height: 430px;
+            
+        }
+        body{
+            background-color: rgba(249,249,249,255);
+            margin: 0;
+        }
+        .home-icon{
+            height: 040px;
+            position: absolute;
+            top: 20px;
+            left: 70%;
+            cursor: pointer;
+
+        }
+         .tooltip-h{
+            position: absolute;
+            right: 27%;
+            top: 60%;
+            background-color: rgb(110, 110, 110);
+            color: white;
+            padding: 8px 5px 8px 5px ;
+            opacity: 0;
+        }
+        .tooltip-c{
+            position: absolute;
+            right: 20%;
+            top: 60%;
+            background-color: rgb(110, 110, 110);
+            color: white;
+            padding: 8px 5px 8px 5px ;
+            opacity: 0;
+        }
+        .tooltip-cart{
+            position: absolute;
+            right: 17%;
+            top: 60%;
+            background-color: rgb(110, 110, 110);
+            color: white;
+            padding: 8px 10px 8px 10px ;
+            opacity: 0;
+        }
+        .tooltip-search{
+            position: absolute;
+            right: 41%;
+            top: 60%;
+            background-color: rgb(110, 110, 110);
+            color: white;
+            padding: 8px 10px 8px 10px ;
+            opacity: 0; 
+        }
+        .tooltip-voice{
+            position: absolute;
+            right: 35%;
+            font-size: 12px;
+            top: 65%;
+            background-color: rgb(110, 110, 110);
+            color: white;
+            padding: 8px 10px 8px 10px ;
+            opacity: 0; 
+        }
+        .home-icon-div:hover .tooltip-h{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .contact-us-div:hover .tooltip-c{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .cart-div:hover .tooltip-cart{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .search-div:hover .tooltip-search{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .voice-div:hover .tooltip-voice{
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .search-box{
+            border-color: rgb(160, 160, 160);
+            border-style: solid;
+            border-radius: 20px;
+            position: absolute;
+            background-color: rgba(249,249,249,255);
+            top: 25px;
+            height: 40px;
+            width: 30%;
+            left: 35%;
+            cursor: pointer;
+            font-size: 20px;
+        }        
+        .search-icon{
+            height: 35px;
+            width: 4%;
+            position: absolute;
+            left: 55%;
+            top: 25%;
+            padding: 3px ;  
+            cursor: pointer;
+            border-left-color: rgb(160, 160, 160);
+            border-left-style: solid;
+            border-left-width: 2px;
+        }
+        input[type="search"]::placeholder{
+            left: 10%;
+        }
+        .voice{
+            height: 32px;
+            position: absolute;
+            left: 60%;
+            top: 25%;
+            padding: 5px ;  
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .contact-us{
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left:75%;
+            cursor: pointer;
+        }
+        .shopping-cart{
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 80%;
+            cursor: pointer;
+        }
+        .avatar{
+            height: 45px;
+            position: absolute;
+            top: 20px;
+            left: 86%;
+        }
+        .name{
+            display: inline-block;
+            font-size: 25px;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            left: 90%;
+        }
+        .Work-From-Anywhere{
+            position: absolute;
+            top: 20%;
+            font-size: 50px;
+            left: 10%;
+            color: #fb7052;
+        }
+        .description{
+            position: absolute;
+            top: 50%;
+            width: 55%;
+            left: 20%;
+            font-size: 20px;
+            
+        }
+        .get-started{
+            background-color:#fb7052;
+            border: none;
+            color: white;
+            height: 50px;
+            width: 25%;
+            position: absolute;
+            left: 30%;
+            top: 115%;
+            cursor: pointer;
+        }
+        .social-media-y{
+            height: 30px;
+            position: absolute;
+            top: 130%;
+            left: 100%;
+        }        
+        .social-media-t{
+            height: 30px;
+            position: absolute;
+            top: 130%;
+            left: 110%;
+        }
+        .social-media-i{
+            height: 30px;
+            position: absolute;
+            top: 130%;
+            left: 120%;
+        }
+        .social-media-f{
+            height: 30px;
+            position: absolute;
+            top: 130%;
+            left: 130%;
+        }
+        .coment-1{
+            border-color: #fb7052;
+            border-style: solid;
+            border-width: 2px;
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            right: 80%;
+            width: 30%;
+            padding-top: 60px;
+            padding-bottom: 3%;
+        }
+        .coment-2{
+            border-color: #fb7052;
+            border-style: solid;
+            border-width: 2px;
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            left: 32%;
+            right: 50%;
+            width: 30%;
+            padding-top: 60px;
+            padding-bottom: 3%;
+        }
+        .coment-3{
+            border-color: #fb7052;
+            border-style: solid;
+            border-width: 2px;
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            left: 65%;
+            width: 30%;
+            padding-top: 60px;
+            padding-bottom: 3%;
+        }
+        .coment-ava{
+            height: 50px;
+            position: absolute;
+            left:45%;
+            top: 10%;
+        }
+        .about-to-box{
+            background-color: #fb7052;
+            position: absolute;
+            margin-top: 50%;
+        }
+        @media(max-width: 1690px){
+            .coment-1, .coment-2, .coment-3{
+                top: 80%;
+            }
+        }
+        @media(max-width: 1310px){
+        .coment-1, .coment-2, .coment-3{
+                top: 60%;
+                height: 200px;
+                
+            }
+        .get-started{
+            top: 90%;
+        }
+        .name{
+            font-size: 20px;
+        }
+        .Bet_Le_Bet{
+            width: 30%;
+        }
+        .description{
+            top: 35%;
+        }
+        .Work-From-Anywhere{
+            font-size: 40px;
+        }
+        .about-to-box{
+            margin-top: 100%;
+        }
+        }
+        @media(max-width: 946px){
+            .tooltip-cart{
+                right: 5%;
+                top: 80%;
+            }
+            .tooltip-c{
+                right: 12%;
+                top: 80%;
+            }
+            .tooltip-h{
+                right: 25%;
+                top: 80%;
+            }
+            .tooltip-search{
+                top: 80%;
+                right: 40%;
+            }
+            .tooltip-voice{
+                top: 80%;
+                right: 28%;
+            }
+            .Work-From-Anywhere{
+                font-size: 30px;
+                top: 10%;
+            }
+            .description{
+                top: 20%;
+            }
+            .get-started{
+                top: 101%;
+            }
+            .coment-1, .coment-2, .coment-3{
+                top: 45%;
+            }
+            .search-icon{
+                top: 32%;
+            }
+            .voice{
+                top: 32%;
+            }
+            .home-icon{left: 70%;}
+            .contact-us{left: 80%;}
+            .shopping-cart{
+                left: 90%;
+            }
+
+        }
+        @media(max-width: 700px){
+            .search-icon{
+                left: 53%;
+                top: 40%;
+            }
+            .voice{
+                left: 58%;
+                top: 41%;
+            }
+            .coment-ava{
+                top: 10px;
+            }
+            .coment-name{
+                font-size: 16px;
+            }
+            .description{
+                width: 500px;
+                left: 15%;
+            }
+            .social-media-f{
+                left: 80%;
+            }
+            .social-media-i{
+                left: 90%;
+            }
+        }
+        @media(max-width: 654px){
+            .search-icon{
+                top: 50%;
+            }
+            .voice{
+                top: 50%;
+                left: 57%;
+            }
+            .tooltip-c{top: 95%;}
+            .tooltip-cart{top: 95%;}
+            .tooltip-search{top: 110%;}
+            .tooltip-voice{top: 110%;}
+            .tooltip-h{top: 95%;}
+
+            .Work-From-Anywhere{
+                font-size: 23px;
+            }
+            .about-to-box{
+                right: -20%;
+                margin-top: 90%;
+            }
+            .coment-1{
+                height: 25%;
+                margin-left: 2%;
+                width: 35%;
+                top: 50%;
+            }
+            .coment-2{
+                height: 25%;
+                margin-left: 10%;
+                width: 35%;
+                top: 50%;
+            }
+            .coment-3{
+                height: 25%;
+                margin-left: 18%;
+                width: 35%;
+                top: 50%;
+            }
+        }
+        @media(max-width: 540px){
+            .coment-1, .coment-2, .coment-3{
+                top: 60%;
+                height: 30%;
+            }
+        }
+        @media(max-width: 474px){
+            .shopping-cart{
+                left: 100%;
+        }
+        
+        .contact-us{
+            left: 85%;
+        }
+        .home-icon{
+            left: 70%;
+        }
+        .voice, .search-box, .search-icon{
+            display: none;
+        }
+            .social-media-f{
+                left: 80%;
+                top: 130%;
+            }
+            .Bet_Le_Bet{
+                height: 60px;
+                width: auto;
+            }
+            .social-media-i{
+                left: 70%;
+                top: 130%;
+            }
+            .social-media-t{
+                left: 100%;
+                top: 130%;}
+            .social-media-y{
+                top: 130%;
+                left: 90%;
+            }
+            .Work-From-Anywhere{
+                font-size: 23px;
+                width: 130%;
+            }
+            .about-to-box{
+                right: -50%;
+                margin-top: 500%;
+            }
+            body{
+                height: 3000px;
+            }
+            html{
+                height: 3000px;
+            }
+            .coment-1{
+                width: 120%;
+                font-size: 27px;
+                left: 2%;
+                top: 110%;
+                height: 300px;
+
+            }
+            .coment-2{
+                top: 200%;
+                width: 120%;
+                font-size: 27px;
+                left: -6%;
+                height: 300px;
+            }
+            .coment-3{
+                top: 290%;
+                width: 120%;
+                font-size: 27px;
+                left: -14%;
+                height: 300px;
+            }
+            .star{
+                height: 30px;
+            }
+            .coment-name{
+                font-size: 30px;
+            }
+            .get-started{
+                top: 120%;
+                width: 34%;
+                height: 20%;
+                left: 20%;
+                font-weight: bold;
+                font-size: 19px;
+            }
+            .only-des{
+                font-size: 30px;
+            }
+            .service{
+                font-size: 20px;
+            }
+            .half-about-to{
+                font-size: 23px;
+            }
+
+        }
+        @media(max-width: 390px){
+            .coment-1{
+                height: 350px;
+            }
+        }
+        @media(max-width: 360px){
+            .coment-1,.coment-2, .coment-3{
+                height: 350px;
+            }
+            .Work-From-Anywhere{
+                top: 20%;
+                width: 160%;
+            }
+            .description{
+                top: 30%;
+            }
+                
+            
+        }
+        header{position: relative;}

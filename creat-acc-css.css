@@ -1,0 +1,9 @@
+
+    label{
+        font-family: Roboto, arial;
+        font-weight: bold;
+    }
+    .box{
+        border: 10px solid rgb(238, 236, 236);
+        height: 30%;
+    }
